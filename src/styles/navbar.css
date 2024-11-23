@@ -1,0 +1,126 @@
+/* Navbar */
+body {
+    padding-top: 7rem;
+}
+
+
+.navbar {
+    background-color: #1a1a1a;  /* Fondo negro sólido */
+    border-bottom: 2px solid #ffe81f; /* Línea inferior amarilla estilo Star Wars */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: fixed; /* Fijar navbar al top */
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
+}
+
+
+
+/* Links de navegación */
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+   
+   
+}
+
+.nav-link {
+    color: #f5f5f5;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    position: relative;
+    color: grey;
+  
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffe81f; /* Línea amarilla al hacer hover */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffe81f;
+}
+
+/* Botón de Favoritos */
+.btnfav{
+    background-color: #ffe81f;
+    border: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnfav {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+
+.logo {
+    border-color: #e6b800;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.papelera {
+    margin-left: 10px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.papelera:hover {
+    color: #ff5c5c;
+}
+/* Fondo oscuro y texto amarillo por defecto */
+.custom {
+    background-color: #212529; /* Dark background */
+    color: #ffc107; /* Bootstrap amarillo */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  }
+  
+  /* Fondo gris oscuro al pasar el mouse */
+  .custom:hover {
+    background-color: #343a40; /* Gris oscuro */
+    color: #ffc107; /* Mantén el texto amarillo */
+  }
+  
+  /* Para el ícono de la papelera (opcional) */
+  .custom .papelera:hover {
+    color: #dc3545; /* Cambia a rojo en hover */
+    cursor: pointer;
+  }

@@ -1,0 +1,102 @@
+/* Fondo */
+body {
+    background-color: #000;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 6rem;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se acomoden */
+    gap: 20px; /* Añade espacio entre las tarjetas */
+}
+
+/* Tarjeta en Learn More */
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Aumentamos el tamaño de las tarjetas */
+    margin-top: 3rem;
+}
+
+
+/* Imagen de la tarjeta */
+.card-img-container {
+    width: 100%;
+    height: 450px; /* Aumentamos la altura de la imagen */
+    overflow: hidden;
+    position: relative;
+    background: #222;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img-container img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2); /* Aumentamos el brillo en hover */
+}
+
+/* Contenido de la tarjeta */
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 20px; /* Aumentamos el tamaño del título */
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #ccc;
+    text-align: left;
+}
+
+/* Botón de regreso */
+.back {
+    background-color: #3a3a3a;
+    color: #ffd700;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back:hover {
+    background-color: #ffd700;
+    color: #000;
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
+}
+
+/* Texto de carga */
+h2 {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
