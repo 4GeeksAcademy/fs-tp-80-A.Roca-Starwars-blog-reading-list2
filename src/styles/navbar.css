@@ -5,16 +5,21 @@ body {
 
 
 .navbar {
-    background-color: #1a1a1a;  /* Fondo negro sólido */
-    border-bottom: 2px solid #ffe81f; /* Línea inferior amarilla estilo Star Wars */
+    background-color: #1a1a1a;
+    /* Fondo negro sólido */
+    border-bottom: 2px solid #ffe81f;
+    /* Línea inferior amarilla estilo Star Wars */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    position: fixed; /* Fijar navbar al top */
-    width: 100%; /* Asegurar que ocupe todo el ancho */
-    z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
+    position: fixed;
+    /* Fijar navbar al top */
+    width: 100%;
+    /* Asegurar que ocupe todo el ancho */
+    z-index: 1000;
+    /* Asegura que el navbar esté encima de otros elementos */
 }
 
 
@@ -39,8 +44,8 @@ body {
 
 .nav-item {
     margin: 0 15px;
-   
-   
+
+
 }
 
 .nav-link {
@@ -51,7 +56,7 @@ body {
     transition: color 0.3s ease;
     position: relative;
     color: grey;
-  
+
 }
 
 .nav-link::before {
@@ -61,7 +66,8 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #ffe81f; /* Línea amarilla al hacer hover */
+    background-color: #ffe81f;
+    /* Línea amarilla al hacer hover */
     transition: width 0.3s ease;
 }
 
@@ -74,7 +80,7 @@ body {
 }
 
 /* Botón de Favoritos */
-.btnfav{
+.btnfav {
     background-color: #ffe81f;
     border: none;
     color: #1a1a1a;
@@ -106,21 +112,28 @@ body {
 .papelera:hover {
     color: #ff5c5c;
 }
+
 /* Fondo oscuro y texto amarillo por defecto */
 .custom {
-    background-color: #212529; /* Dark background */
-    color: #ffc107; /* Bootstrap amarillo */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
-  }
-  
-  /* Fondo gris oscuro al pasar el mouse */
-  .custom:hover {
-    background-color: #343a40; /* Gris oscuro */
-    color: #ffc107; /* Mantén el texto amarillo */
-  }
-  
-  /* Para el ícono de la papelera (opcional) */
-  .custom .papelera:hover {
-    color: #dc3545; /* Cambia a rojo en hover */
+    background-color: #212529;
+    /* Dark background */
+    color: #ffc107;
+    /* Bootstrap amarillo */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transiciones suaves */
+}
+
+/* Fondo gris oscuro al pasar el mouse */
+.custom:hover {
+    background-color: #343a40;
+    /* Gris oscuro */
+    color: #ffc107;
+    /* Mantén el texto amarillo */
+}
+
+/* Para el ícono de la papelera (opcional) */
+.custom .papelera:hover {
+    color: #dc3545;
+    /* Cambia a rojo en hover */
     cursor: pointer;
-  }
+}

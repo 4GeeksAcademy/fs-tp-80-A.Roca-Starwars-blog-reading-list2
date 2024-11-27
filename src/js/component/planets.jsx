@@ -11,8 +11,7 @@ export const Planets = () => {
     return (
         <div className="text-center mt-5">
             <div className="row">
-              
-                
+
                 {store.planets?.map(el =>
                     <PlanetCard
                         key={el.uid}

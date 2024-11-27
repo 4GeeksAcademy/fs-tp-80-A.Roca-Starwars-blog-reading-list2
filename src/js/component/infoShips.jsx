@@ -51,7 +51,7 @@ export const InfoShips = () => {
                                 </p>
                             </div>
                             <Link to="/ships">
-                                <button className="back btn btn-primary">Back</button>
+                                <button className="back">Back</button>
                             </Link>
                         </div>
                     </div>
